@@ -4,6 +4,7 @@ maior que 20, este deverá ser apresentando
 somando-se a ele mais 8; caso o valor
 somado seja menor ou igual a 20, este deverá
 ser apresentado subtraindo-se 5 -->
+<!--test-->
 <DOCTYPE html>
 <html lang="pt-br"></html>
 <head>
