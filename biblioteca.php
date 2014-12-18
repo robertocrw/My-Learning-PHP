@@ -24,7 +24,7 @@ de usuário (professor ou aluno) e possa imprimir um recibo conforme mostrado a 
 			     echo "$var2: $var3  <br/> Livro: $var1 <br/> ";
 				 echo "Prazo de devolução: 3 dias!";
 			}
-			 elseif ($var2 == $var4 ) { echo "Complete o fomulario";}
+			 
 
 		 ?>
 		 <a href="javascript:history.go(-1)" class="botao">Voltar</a>
