@@ -15,6 +15,7 @@
 			 for ($cont = 1; $cont <= $var1; $cont++) {
 			     $cont2 = $cont * $var1;
 				 echo "$var1 * $cont = $cont2 <br/>";
+			 // tambem poderia declarar o meu echo como ex: echo "O produto de 1 até $var1 é igual a $cont2";	 
 			 }
 		 ?>
 	 </div>
