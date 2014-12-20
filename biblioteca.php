@@ -14,15 +14,15 @@ de usuário (professor ou aluno) e possa imprimir um recibo conforme mostrado a 
 		     $var1 = isset($_GET["book"])?$_GET["book"]:0;
 			 $var2 = isset($_GET["stats"])?$_GET["stats"]:0;
 			 $var3 = isset($_GET["nom"])?$_GET["nom"]:0;
-			 $var4 = false;
+			 $vardate = date('d-m-y');
              if($var2 == "Professor") { //cuidado com para não colocar o : apos o () do if
 			     echo "$var2: $var3 <br/> Livro: $var1 <br/> ";
-			     echo "Prazo de devolução: 10 dias!";
+			     echo "Prazo de devolução 10 dias a partir do dia: $vardate";
 			}
 			
 			 elseif ($var2 == "Estudante") { //cuidado com para não colocar o : apos o () do elseif
 			     echo "$var2: $var3  <br/> Livro: $var1 <br/> ";
-				 echo "Prazo de devolução: 3 dias!";
+				 echo "Prazo de devolução 3 dias a partir do dia: $vardate";
 			}
 			 
 
