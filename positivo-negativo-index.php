@@ -8,21 +8,11 @@
 	 <link rel="stylesheet" href="index.css"/>
 </head>
 <script>
-     function verifica(form) {
-	     var $contador = form.num.value.length; 
-		     for ( $contador = 0; $contador <= 20; $contador++ ) {
-			     if( $contador < 5)
-			     alert("Por favor digitevo 20 numero");
-				 form.num.focus();
-				 return false;
-				 
-			 }
-		 
-	 }
+
 </script>
 <body>
-     <div>
-	     <form method="post" action="positivo-negativo.php" name="form" onclick="return verifica(this)";>
+     <div><!--preciso criar uma função que indentifique os 20 numros no campo de text-->
+	     <form method="post" action="positivo-negativo.php" name="form" >
 		     Digite 20 numeros Positivos e Negativos: <input type="text" name="num"  />
 			 <input type="submit" class="botao" value="Enviar"/>
 		 </form>
