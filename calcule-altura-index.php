@@ -9,10 +9,12 @@
 <body>
     <div>
          <form method="post" action="calcule-altura.php">
-             Altura 1: <input type="text" name="alt1" /><br/>
-             Cresce por Ano: <input type="number" name="cre1"/><br/>
-             Altura 2: <input type="text" name="alt2"/><br/>
-             Cresce por Ano: <input type="number" name="cre2"/><br/>
+             Nome: <input type="text" name="nom1" /><br/>
+             Altura: <input type="text" name="alt1" /><br/>
+             Cresce por Ano: <input type="number" name="cre1" max="10" min="0"/><br/>
+             Nome: <input type="text" name="nom2" /><br/>
+             Altura: <input type="text" name="alt2"/><br/>
+             Cresce por Ano: <input type="number" name="cre2" max="10" min="0"/><br/>
              <input type="submit" class="botao" value="Calcular"/>
          </form>
     </div>
