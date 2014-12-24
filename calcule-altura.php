@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8"/>
 	<title>Calculo da Altura</title>
-    <link rel="stylesheet" href="index.css" type="text/css"
+    <link rel="stylesheet" href="index.css" type="text/css"/>
 </head>
 <body>
     <div>
@@ -20,20 +20,27 @@
              $ano = 0;
              $varcres1 = $cres1 / 100;
              $varcres2 = $cres2 / 100;
+             //Algumas condiçoes importantes para se evitar o loop e erros matematicos...
+             if ($altu1 > $altu2)  {echo "$nome1 já e maior que $nome2"; return;} 
+             elseif ($altu1 == $altu2) {echo "$nome1 e $nome2 tem a mesma altura"; return;} 
+             elseif ($cres1 < $cres2) {echo "$nome1 nunca será maior que $nome2"; return;}
+             elseif ($cres1 == $cres2 ) {echo "$nome1 nunca será maior que $nome2"; return;}
+             // se nenhuma destas condições estiver no meu formulario, então entraremos no 
+             //loop
+                 do {
 
-
-             do {
-
-                $altu1 = $altu1 + $varcres1;
-                $altu2 = $altu2 + $varcres2;
-                $ano   = $ano   + 1; }
-                while ($altu1 < $altu2);
+                     if ($altu1 < $altu2)
+                     
+                     $altu1 = $altu1 + $varcres1;
+                     $altu2 = $altu2 + $varcres2;
+                     $ano   = $ano   + 1; }
+                     while ($altu1 < $altu2); 
                     
-
-                echo "$nome1 ficara maior que $nome2 em $ano anos!";
-  
+ 
+                      echo "$nome1 ficara maior que $nome2 em $ano anos!";
+        
          ?>
-         <a href="javascript:history.go(-1)" class="botao">Voltar</a>
+         <a href="javascript:history.go(-1)" class="botao" >Voltar</a>
     </div>
 </body>
 </html>

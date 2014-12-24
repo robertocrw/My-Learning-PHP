@@ -4,17 +4,18 @@
 <head>
 	<meta charset="UTF-8"/>
 	<title>Calculo da Altura</title>
-    <link rel="stylesheet" href="index.css" type="text/css"
+    <link rel="stylesheet" href="index.css" type="text/css"/>
 </head>
 <body>
     <div>
          <form method="post" action="calcule-altura.php">
              Nome: <input type="text" name="nom1" /><br/>
              Altura: <input type="text" name="alt1" /><br/>
-             Cresce por Ano: <input type="number" name="cre1" max="10" min="0"/><br/>
+             Cresce por Ano: <input type="number" name="cre1" max="10" min="0"/>&nbspCm<br/>
+             <p> Quanto anos precisarei para ficar mairo que: </p>
              Nome: <input type="text" name="nom2" /><br/>
              Altura: <input type="text" name="alt2"/><br/>
-             Cresce por Ano: <input type="number" name="cre2" max="10" min="0"/><br/>
+             Cresce por Ano: <input type="number" name="cre2" max="10" min="0"/>&nbspCm<br/>
              <input type="submit" class="botao" value="Calcular"/>
          </form>
     </div>
