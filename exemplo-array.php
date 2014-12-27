@@ -10,8 +10,8 @@
          <?php 
              $var1 = isset($_POST["num"])?$_POST["num"]:0;
              //O campo de texto aparece como somente uma matriz 
-             $var2 = ($var1);
-             print_r($var2);
+             $var2 = explode("", $var1); // Esta dando erro
+             echo($var2);
          ?>
      </div>
 </body>
